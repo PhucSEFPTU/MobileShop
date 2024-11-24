@@ -20,8 +20,8 @@
                 <a href="product.html" class="list-group-item list-group-item-action bg-light">Sản phẩm</a>
                 <a href="brand.html" class="list-group-item list-group-item-action bg-light">Thương hiệu</a>
                 <a href="category.html" class="list-group-item list-group-item-action bg-light">Danh mục</a>
-                <a href="#" class="list-group-item list-group-item-action bg-light">Người dùng</a>
-                <a href="#" class="list-group-item list-group-item-action bg-light">Cài đặt</a>
+                <a href="account.html" class="list-group-item list-group-item-action bg-light">Người dùng</a>
+                <a href="setting.html" class="list-group-item list-group-item-action bg-light">Cài đặt</a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -66,7 +66,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Quản lý sản phẩm</h5>
                                 <p class="card-text">Thêm, xóa, sửa, xem danh sách sản phẩm</p>
-                                <a href="#" class="btn btn-primary">Đi đến trang Sản phẩm -> </a>
+                                <a href="product.html" class="btn btn-primary">Đi đến trang Sản phẩm -> </a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Quản lý thương hiệu</h5>
                                 <p class="card-text">Thêm, xóa, sửa, xem danh sách thương hiệu</p>
-                                <a href="#" class="btn btn-primary">Đi đến trang Thương hiệu -> </a>
+                                <a href="brand.html" class="btn btn-primary">Đi đến trang Thương hiệu -> </a>
                             </div>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Quản lý danh mục</h5>
                                 <p class="card-text">Thêm, xóa, sửa, xem danh sách danh mục</p>
-                                <a href="#" class="btn btn-primary">Đi đến trang Danh mục -> </a>
+                                <a href="category.html" class="btn btn-primary">Đi đến trang Danh mục -> </a>
                             </div>
                         </div>
                     </div>
@@ -93,13 +93,11 @@
                             <div class="card-body">
                                 <h5 class="card-title">Quản lý tài khoản</h5>
                                 <p class="card-text">Thêm, xóa, sửa, xem danh sách tài khoản người dùng</p>
-                                <a href="#" class="btn btn-primary">Đi đến trang Tài khoản -> </a>
+                                <a href="account.html" class="btn btn-primary">Đi đến trang Tài khoản -> </a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Additional content can go here -->
             </div>
         </div>
         <!-- /#page-content-wrapper -->
@@ -116,7 +114,7 @@
             $("#wrapper").toggleClass("toggled");
         });
 
-        // Gán giá trị fullname từ localStorage (hoặc sessionStorage) sau khi đăng nhập
+        // Lấy giá trị tên của tài khoản ở góc màn hình đăng nhập
         document.addEventListener('DOMContentLoaded', function () {
             const fullName = localStorage.getItem('fullName') || 'Admin';
             document.getElementById('userFullName').textContent = fullName;
